@@ -205,3 +205,86 @@ ul{
 .course-card p{
     color:#64748B;
 }
+
+.journey{
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
+    text-align:center;
+}
+
+.journey h2{
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.journey-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.journey-step{
+    background:white;
+    padding:35px 25px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.journey-step:hover{
+    transform:translateY(-10px);
+}
+
+.step-icon{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.journey-step h3{
+    color:#2563EB;
+    margin-bottom:15px;
+}
+
+.journey-step p{
+    color:#64748B;
+}
+
+.why-us{
+    width:90%;
+    max-width:1200px;
+    margin:120px auto;
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.why-image{
+    flex:1;
+}
+
+.why-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+.why-content{
+    flex:1;
+}
+
+.why-content h2{
+    font-size:2.5rem;
+    margin-bottom:30px;
+}
+
+.feature{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+.feature span{
+    font-size:28px;
+}
