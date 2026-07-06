@@ -74,13 +74,30 @@ ul{
 }
 
 .nav-links a{
-  color:#334155;
-  font-weight:500;
-  transition:.3s;
+    position:relative;
+    color:#334155;
+    font-weight:500;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#2563EB;
+    transition:.3s;
 }
 
 .nav-links a:hover{
-  color:#2563EB;
+    color:#2563EB;
+}
+
+.nav-links a:hover::after{
+    width:100%;
 }
 
 .hero{
@@ -186,7 +203,7 @@ ul{
 }
 
 .course-card{
-    background:white;
+    background:#EFF6FF;
     padding:30px;
     border-radius:15px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
@@ -225,7 +242,7 @@ ul{
 }
 
 .journey-step{
-    background:white;
+    background:#EFF6FF;
     padding:35px 25px;
     border-radius:15px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
@@ -320,7 +337,7 @@ ul{
 
 .testimonial-card{
 
-    background:white;
+    background:#EFF6FF;
 
     padding:35px;
 
@@ -372,9 +389,9 @@ ul{
 
     margin:120px auto;
 
-    background:linear-gradient(135deg,#2563EB,#4F46E5);
+    background:#2563EB;
 
-    color:white;
+    color:#EFF6FF;
 
     text-align:center;
 
@@ -402,7 +419,7 @@ ul{
 
 .cta .btn{
 
-    background:white;
+    background:#EFF6FF;
 
     color:#2563EB;
 
@@ -410,6 +427,6 @@ ul{
 
 .cta .btn:hover{
 
-    background:#F1F5F9;
+    background:#E8F1FF;
 
 }
